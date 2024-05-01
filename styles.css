@@ -1,5 +1,8 @@
 
-
+body{
+    marker: none;
+    
+}
     nav ul{
         display: flex;
     list-style: none;
@@ -15,3 +18,21 @@
         width: 100%;
         height: 50dvh;
     }
+    main img{
+        position: center;
+        max-width: 50%;
+        max-block-size: 20rem;
+        max-width: 25em;
+    }
+    section {
+        color: blue;
+        marker: none;
+        
+    }
+        
+    
+    
+
+    
+
+
