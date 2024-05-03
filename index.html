@@ -4,96 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfilio</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
 </head>
 
 <body>
-
-    
-   
     <nav>
         <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#lebenslauf">Lebenslauf</a></li>
-            <li><a href="#projekt">Projekt</a></li>
+            <li><a href="#projects">Projects</a></li>
         </ul>
     </nav>
     <main>
 
-        <img src="Images/Dragonball-image.jpg" <link rel="stylesheet" href="styles.css">
-    </body>
-
         <section class="hero">
-
-            <div class="hero-text">
-                <h2 class="text-accent">Dragonballs</h2>
-                <h1>Only for addicted fans</h1>
-                <h2 class="text-primary">Dragonball fanpage</h2>
+            <div class="hero-text" <h1 class="text-accent">Hi, ich bin</h1>
+                <h2>Antoniou Charalampos</h2>
+                <h1 class="text-primary">Lutz&Grub Schüler</h1>
 
                 <p>
-                    Akira Toriyama we will never forget you. RIP!!!
+                    Anfangsjahr 2024. Möchte Programierung lernen und endlich meinen Traumberuf folgen.
                 </p>
             </div>
-            <img src="Images/Dragonball5-image.jpg">
+            <img src="Photos/Dragonball3-image.jpg" alt="Photos">
         </section>
         <section class="skills">
             <ul>
                 <li>
-                    <h3>HTML</h3>
+                    <h3 id="html-skill">HTML</h3>
                     <div class="skill-shadow">
-                        <div class="skill-bar"><span class="value">10</span></div>
+                        <div class="skill-bar1" style="width: 10%; background-color: red; box-shadow: 5px 0 15px red;">
+                            <span class=" value">10</span>
+                        </div>
                     </div>
                 </li>
                 <li>
-                    <h3>CSS</h3>
+                    <h3 id="css-skill">CSS</h3>
                     <div class="skill-shadow">
-                        <div class="skill-bar"><span class="value">10</span></div>
+                        <div class="skill-bar2"
+                            style="width: 10%; background-color: blueviolet; box-shadow: 5px 0 15px blueviolet;">
+                            <span class="value">10</span>
+                        </div>
                     </div>
+
                 </li>
                 <li>
-                    <h3>Javascript</h3>
+                    <h3 id="javascript-skill">JAVA</h3>
                     <div class="skill-shadow">
-                        <div class="skill-bar"><span class="value">10</span></div>
+                        <div class="skill-bar3"
+                            style="width: 10%; background-color: orangered; box-shadow: 5px 0 15px orangered;"><span
+                                class="value">10</span>
+                        </div>
                     </div>
+                    </h3>
                 </li>
                 <li>
-                    <h3>Vibes</h3>
+                    <h3 id="vibes-skill">VIBES</h3>
                     <div class="skill-shadow">
-                        <div class="skill-bar"><span class="value">90</span></div>
+                        <div class="skill-bar4"
+                            style="width: 90%; background-color: darkblue; box-shadow: 5px 0 15px darkblue;"><span
+                                class="value">90</span>
+                        </div>
                     </div>
+                    </h3>
                 </li>
             </ul>
-        </section>
-        <section class="timeline"></section>
-        <section class="project">
-            <ul>
-                <li>
-                   <img src="Images/Dragonball2-image.jpg">
-                    <h4>Projekt 1</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, corrupti?</p>
-                    <button>Go</button>
-                </li>
-                <li>
-                    <img src="Images/Dragonball3-image.jpg">
-                    <h4>Projekt 2</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, harum.
-                    </p>
-                    <button>Go</button>
-                </li>
-                <li>
-                    <img src="Images/Dragonball4-image.jpg">
-                    <h4>Projekt 3</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, sapiente.</p>
-                    <button>Go</button>
-                </li>
-            </ul>
-        </section>
+            <section class="timeline">
+                <h2 class="timeline-title">Lebenslauf</h2>
+                <ul class="timeline-items">
+                    <li>
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">2009</span>
+                        <div class="timeline-content">
+                            <h3>Griechisches Lizeum Abschluss</h3>
+                            <p>hier etwas schreiben</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">hier datum</span>
+                        <div class="timeline-content">
+                            <h3>hier etwas schreiben</h3>
+                            <p>hier etwas schreiben</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">hier datum</span>
+                        <div class="timeline-content">
+                            <h3>hier etwas schreiben</h3>
+                            <p>hier etwas schreiben</p>
+                        </div>
+                    </li>
 
 
+                </ul>
+            </section>
+
+            <section class="project">
+                <ul>
+
+                    <li>
+                        <img src="Photos/Dragonball1-image.jpg" alt="project 1 image">
+                        <div class="card-content">
+                            <h4>Proect 1</h4>
+                            <p> aaa </p>
+                            <button>Go</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="Photos/Dragonball2-image.jpg" alt="project 2 image">
+                        <div class="card-content">
+                            <h4>Proect 2</h4>
+                            <p> aaa </p>
+                            <button>Go</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="Photos/Dragonball-image.jpg" alt="project 3 image">
+                        <div class="card-content">
+                            <h4>Proect 3</h4>
+                            <p> aaa </p>
+                            <button>Go</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        </section>
     </main>
-
 </body>
 
 </html>

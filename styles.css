@@ -1,38 +1,82 @@
-
-body{
-    marker: none;
-    
+:root {
+    --primary-color: #8d1cf7;
+    --accent-color: #fc0db0;
+    --background-color: #121212;
 }
-    nav ul{
-        display: flex;
+
+body {
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: IBM PLEX Serif, sans-serif;
+}
+
+main {
+    color: white;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+nav ul {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     justify-content: space-around;
-    }
+    align-items: center;
+}
 
-    .container{
-        text-align: center;
-    }
-    img{
-        width: 100%;
-        height: 50dvh;
-    }
-    main img{
-        position: center;
-        max-width: 50%;
-        max-block-size: 20rem;
-        max-width: 25em;
-    }
-    section {
-        color: blue;
-        marker: none;
-        
-    }
-        
-    
-    
+nav ul li:not(:last-child)::after {
+    content:" |" ;
+    color: var(--primary-color);
+    margin-left: 1rem;
+}
 
-    
+nav ul li a {
+    color: #0aeb19;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-shadow: 0 0 2px var(--primary-color);
+    transition: all 0.3s ease;
+}
 
+nav ul li a:hover {
+    color: var(--accent-color);
+    text-shadow: 15px 15px 15px;
+}
 
+section.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    place-content: center;
+    gap: 20px;
+}
+
+section.hero .hero-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    text-align: center;
+    color: #83eab3;
+}
+
+.hero-text h2 {
+    font-size: 2.5em;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    color: rgb(132, 132, 239);
+}
