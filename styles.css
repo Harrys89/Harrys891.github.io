@@ -165,7 +165,7 @@ section.skills ul li .skill-shadow {
     border-radius: 1rem;
 }
 
-sections.skills ul li .skill-bar1 {
+section.skills ul li .skill-bar1 {
     background-color: red;
     border-radius: 1rem;
     width: 70%;
@@ -174,7 +174,7 @@ sections.skills ul li .skill-bar1 {
     font-size: 1em;
 }
 
-sections.skills ul li .skill-bar2 {
+section.skills ul li .skill-bar2 {
     background-color: red;
     border-radius: 1rem;
     width: 70%;
@@ -183,7 +183,7 @@ sections.skills ul li .skill-bar2 {
     font-size: 1em;
 }
 
-sections.skills ul li .skill-bar3 {
+section.skills ul li .skill-bar3 {
     background-color: red;
     border-radius: 1rem;
     width: 70%;
@@ -192,7 +192,7 @@ sections.skills ul li .skill-bar3 {
     font-size: 1em;
 }
 
-sections.skills ul li .skill-bar4 {
+section.skills ul li .skill-bar4 {
     background-color: red;
     border-radius: 1rem;
     width: 70%;
@@ -231,5 +231,110 @@ sections.skills ul li .skill-bar4 {
 
 .skill-bar4 span.value::after {
     content: "%";
+}
+
+div .skill-bar1 {
+    color: blue;
+}
+
+div .skill-bar2 {
+    color: greenyellow;
+}
+
+div .skill-bar3 {
+    color: yellow;
+}
+
+div .skill-bar4 {
+    color: red;
+}
+
+li h3#html-skill {
+    color: blue;
+}
+
+li h3#css-skill {
+    color: rgb(252, 0, 0);
+}
+
+li h3#javascript-skill {
+    color: rgb(252, 6, 47);
+}
+
+li h3#vibes-skill {
+    color: rgb(17, 0, 255);
+}
+
+section.timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.timeline-items::before {
+    content:"" ;
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--accent-color);
+    left: calc(50% +15px);
+}
+
+ul.timeline-items {
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+ul.timeline-items li {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+ul.timeline-items li:nth-child(odd) {
+padding-right: 50%;
+text-align: left;
+}
+
+ul.timeline-items li:nth-child(even) {
+    padding-left: calc(50% +30px);
+    text-align: left;
+}
+
+ul.timeline-items li:last-child {
+    margin-bottom: 0;
+}
+
+ul.timeline-items .timeline-dot {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    right: calc(50% -30px);
+    box-shadow: 0 0 25px var(--accent-color);
+}
+
+ul.timeline-items .timeline-date {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 10px 0 15px 0;
+}
+
+ul.timeline-items .timeline-content {
+    border: 3px solid var(--accent-color);
+    padding: 10px 30px;
+    border-radius: 75px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 10px var(--accent-color);
+    cursor: pointer;
+    transition: all 3s ease;
 }
 
