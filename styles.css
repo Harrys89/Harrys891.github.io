@@ -338,3 +338,84 @@ ul.timeline-items .timeline-content {
     transition: all 3s ease;
 }
 
+ul.timel-items .timeline-content:hover {
+    box-shadow: 0 0 25px var(--accent-color);
+    transform: scale(1.05);
+}
+
+.timeline-content h3 {
+font-size: 16px;
+font-weight: 700;
+margin: 0 0 10px 0;
+}
+
+.timeline-content p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+section.project {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+section.project ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+section.project ul li {
+border: 1px solid white;
+max-width: 400px;
+min-width: 200px;
+background-color: var(--primary-color);
+border-radius: 1rem 1rem 0 0;
+box-shadow: 4px 4px 10px var(--primary-color);
+flex-shrink: 1;
+flex-basis: 400px;
+transition: all 0.3s ease;
+}
+
+section.project ul li {
+    margin: 0 1rem 0.5 rem 1rem;
+}
+
+section.project ul li img {
+    height: 150px;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+section.project ul li h4 {
+    margin: 0.5 1rem;
+    font-size: 1.2em;
+}
+
+section.project ul li button {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    padding: 0.9rem;
+    background-color: var(--accent-color);
+    font-size: 1.1em;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 4px black;
+    box-shadow: 2px 2px 6px #d2e00c;
+}
+
+section.project ul li:hover {
+    box-shadow: 6px 6px 20px var(--accent-color);
+    transform: translateY(-1rem) translateX(0.5rem);
+}
