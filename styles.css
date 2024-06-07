@@ -13,6 +13,8 @@ nav {
     justify-content: space-around;
     position: absolute;
     align-items: center;
+    text-decoration: none;
+   
 }
 
 nav ul {
@@ -20,11 +22,13 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     display: flex;
+
 }
 
 nav ul li:not(:last-child)::after {
-content: "|";
-color: rgb(11, 251, 47);
+content: "| ";
+color: red;
+
 }
 
 section class.home {
