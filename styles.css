@@ -40,4 +40,18 @@ color: red;
 section.home {
 align-items: center;
 background-color: rgb(26, 172, 50);
+text-align: center;
+}
+
+section.bowlingbahnen  h2 {
+    background-color: rgb(26, 172, 50);
+    text-align: center;
+    text-transform: flex;
+    animation: flex;
+}
+section.kontakt {
+    background-color: rgb(28, 195, 200);
+    text-align: center;
+    text-shadow: 12px;
+    
 }
