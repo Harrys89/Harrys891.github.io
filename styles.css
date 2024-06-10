@@ -1,57 +1,118 @@
 body {
-       
+       background-color: whitesmoke;
     margin: 0;
     padding: 0;
 }
 
 main {
     color: rgb(1, 9, 40);
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+
+section {
+    scroll-snap-align: start;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-    position: absolute;
     align-items: center;
     text-decoration: none;
     position: relative;
+
 }
 
 nav ul {
-    padding: 20px;
-    justify-content: space-around;
-    align-items: center;
+    text-shadow: rgb(9, 9, 163);
     display: flex;
-    text-shadow: blue;
+    list-style: none;
   
 }
 
 nav.home-text{
     color: rgb(67, 60, 204);
     justify-content: left ;
+   
+}
+
+nav ul li a {
+    color: blue;
+    text-decoration: dotted;
+    text-transform: uppercase;
+    text-shadow: -3px 5px 15px red;
+
 }
 
 nav ul li:not(:last-child)::after {
 content: "| ";
 color: red;
+margin-left: 0.5rem;
+margin-right: 0.5rem;
 }
 
 
 section.home {
+    background-image: url("Keglerheim-image.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    padding: 1.8rem;
 align-items: center;
-background-color: rgb(26, 172, 50);
 text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+section.home h1 {
+
+    color: lawngreen;
+text-shadow: 3px 3px 15px blue;
+text-align: center;
+
+}
+
+section.home h2 {
+    color: red;
+    text-shadow: 3px 3px 15px blue;
+    text-align: center;
 }
 
 section.bowlingbahnen  h2 {
-    background-color: rgb(26, 172, 50);
+    color: red;
+    text-shadow: 3px 3px 15px blue;
     text-align: center;
     text-transform: flex;
     animation: flex;
+    background-image: url("Keglerheim Innen1.jpg");
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 section.kontakt {
-    background-color: rgb(28, 195, 200);
+    color: greenyellow;
     text-align: center;
     text-shadow: 12px;
+    background-image: url("Keglerheim Innen2.jpg");
+    background-repeat: no-repeat;
+    height: 900px;
+    background-size: cover;
+}
+section button {
+    margin-bottom: 1.2em;
+    border-radius: 0.7rem;
+    font-size: 1.2em;
+    background-color: darkblue;
+    color: orangered;
+    box-shadow: -12px 3px 12px red;
+    margin-top: 10px;
+    align-items: center;
+    cursor: pointer;
     
 }
